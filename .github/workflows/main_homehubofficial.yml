@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - Homehubofficial
+name: Build and deploy PHP app to Azure Web App - homehubofficial
 
 on:
   push:
@@ -64,15 +64,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_EFC76BB5D2B24780A818403E31455FA9 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_876D8D6A14034C6F9F324CA171CE9B09 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_16F0AD80626F4BD099307711F311F7C7 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_FF92DA43601943C2A96E9A7A7972F9AA }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0EDDE1ED5E7D42FFAE798829B3875D7D }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_C253820A1C7B4020BA98D35148B0C3CA }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Homehubofficial'
+          app-name: 'homehubofficial'
           slot-name: 'Production'
           package: .
           
